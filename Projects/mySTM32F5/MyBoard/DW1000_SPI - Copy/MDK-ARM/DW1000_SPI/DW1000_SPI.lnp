@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"dw1000_spi\stm32f1xx_it.o"
+"dw1000_spi\main.o"
+"dw1000_spi\stm32f1xx_hal_msp.o"
+"dw1000_spi\stm32f1xx_hal_gpio.o"
+"dw1000_spi\stm32f1xx_hal_pwr.o"
+"dw1000_spi\stm32f1xx_hal_spi_ex.o"
+"dw1000_spi\stm32f1xx_hal_rcc.o"
+"dw1000_spi\stm32f1xx_hal_rcc_ex.o"
+"dw1000_spi\stm32f1xx_hal_cortex.o"
+"dw1000_spi\stm32f1xx_hal_tim_ex.o"
+"dw1000_spi\stm32f1xx_hal_spi.o"
+"dw1000_spi\stm32f1xx_hal_gpio_ex.o"
+"dw1000_spi\stm32f1xx_hal_dma.o"
+"dw1000_spi\stm32f1xx_hal_flash.o"
+"dw1000_spi\stm32f1xx_hal_flash_ex.o"
+"dw1000_spi\stm32f1xx_hal_uart.o"
+"dw1000_spi\stm32f1xx_hal.o"
+"dw1000_spi\stm32f1xx_hal_tim.o"
+"dw1000_spi\system_stm32f1xx.o"
+"dw1000_spi\startup_stm32f105xc.o"
+--library_type=microlib --strict --scatter "DW1000_SPI\DW1000_SPI.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "DW1000_SPI.map" -o DW1000_SPI\DW1000_SPI.axf

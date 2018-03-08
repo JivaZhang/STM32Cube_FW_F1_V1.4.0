@@ -1,0 +1,99 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.21.1.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: kai zhao, unsw, LIC=GE730-BW0UH-GN9A5-G7RBL-B6KJS-H4QYI
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.21a
+Toolchain Path:  D:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 3 (build 300)
+Assembler:       Armasm.exe V5.06 update 3 (build 300)
+Linker/Locator:  ArmLink.exe V5.06 update 3 (build 300)
+Library Manager: ArmAr.exe V5.06 update 3 (build 300)
+Hex Converter:   FromElf.exe V5.06 update 3 (build 300)
+CPU DLL:         SARMCM3.DLL V5.21a
+Dialog DLL:      DCM.DLL V1.13.8.0
+Target DLL:      Segger\JL2CM3.dll V2.99.23.0
+Dialog DLL:      TCM.DLL V1.14.14.0
+ 
+<h2>Project:</h2>
+D:\STM32Cube\STM32Cube_FW_F1_V1.4.0\Projects\mySTM32F5\MyBoard\My1000_miniboard\MDK-ARM\My1000.uvprojx
+Project File Date:  12/13/2017
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 3 (build 300)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'My1000'
+compiling stm32f1xx_it.c...
+compiling my_ranging.c...
+my_ranging.c(196): warning:  #68-D: integer conversion resulted in a change of sign
+              return(-1) ;
+my_ranging.c(205): warning:  #68-D: integer conversion resulted in a change of sign
+      if (0 > result) return(-1) ; // Some failure has occurred
+my_ranging.c(213): warning:  #68-D: integer conversion resulted in a change of sign
+          return(-1) ;
+my_ranging.c: 3 warnings, 0 errors
+compiling main.c...
+../Src/main.c(440): warning:  #188-D: enumerated type mixed with another type
+    HAL_NVIC_SetPriority(
+XTI0_IRQn, 3, 0);
+../Src/main.c(441): warning:  #188-D: enumerated type mixed with another type
+    HAL_NVIC_EnableIRQ(
+XTI0_IRQn);
+../Src/main.c: 2 warnings, 0 errors
+compiling stm32f1xx_hal_msp.c...
+compiling instance_calib.c...
+compiling my_app_common.c...
+..\Src\application\my_app_common.c(26): warning:  #177-D: variable "rangeDis" was declared but never referenced
+  static	uint8 rangeDis[20];
+..\Src\application\my_app_common.c: 1 warning, 0 errors
+compiling my_app_functions.c...
+compiling deca_device.c...
+compiling deca_sleep.c...
+compiling minsquare.c...
+compiling system_stm32f1xx.c...
+compiling deca_spi.c...
+compiling deca_mutex.c...
+compiling port.c...
+compiling stm32f1xx_hal_gpio_ex.c...
+compiling stm32f1xx_hal.c...
+compiling stm32f1xx_hal_flash.c...
+compiling stm32f1xx_hal_cortex.c...
+compiling stm32f1xx_hal_spi_ex.c...
+compiling stm32f1xx_hal_pwr.c...
+compiling stm32f1xx_hal_spi.c...
+compiling stm32f1xx_hal_rcc.c...
+compiling stm32f1xx_hal_tim_ex.c...
+compiling stm32f1xx_hal_tim.c...
+compiling stm32f1xx_hal_flash_ex.c...
+compiling stm32f1xx_hal_gpio.c...
+compiling stm32f1xx_hal_uart.c...
+compiling stm32f1xx_hal_rcc_ex.c...
+compiling stm32f1xx_hal_dma.c...
+linking...
+Program Size: Code=20520 RO-data=1376 RW-data=128 ZI-data=35400  
+"My1000\My1000.axf" - 0 Error(s), 6 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.1.0.pack
+                ARM::CMSIS:CORE:5.0.2
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.0.2
+
+<h2>Collection of Component include folders:</h2>
+  D:\STM32Cube\STM32Cube_FW_F1_V1.4.0\Projects\mySTM32F5\MyBoard\My1000_miniboard\MDK-ARM\RTE
+  D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include
+  D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.0.2
+Build Time Elapsed:  00:00:36
+</pre>
+</body>
+</html>

@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"testrb6\stm32f1xx_hal_rcc.o"
+"testrb6\stm32f1xx_hal_pwr.o"
+"testrb6\stm32f1xx_hal_gpio_ex.o"
+"testrb6\stm32f1xx_hal_gpio.o"
+"testrb6\stm32f1xx_hal_tim_ex.o"
+"testrb6\stm32f1xx_hal.o"
+"testrb6\stm32f1xx_hal_flash_ex.o"
+"testrb6\stm32f1xx_hal_dma.o"
+"testrb6\stm32f1xx_hal_cortex.o"
+"testrb6\stm32f1xx_hal_flash.o"
+"testrb6\stm32f1xx_hal_tim.o"
+"testrb6\stm32f1xx_hal_rcc_ex.o"
+"testrb6\stm32f1xx_hal_msp.o"
+"testrb6\main.o"
+"testrb6\stm32f1xx_it.o"
+"testrb6\startup_stm32f105xc.o"
+"testrb6\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "testRB6\testRB6.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "testRB6.map" -o testRB6\testRB6.axf

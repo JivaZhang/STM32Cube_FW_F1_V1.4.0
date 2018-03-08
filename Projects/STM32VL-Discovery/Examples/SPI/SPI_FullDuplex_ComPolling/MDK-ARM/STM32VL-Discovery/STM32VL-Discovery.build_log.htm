@@ -1,0 +1,964 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.21.1.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: kai zhao, unsw, LIC=GE730-BW0UH-GN9A5-G7RBL-B6KJS-H4QYI
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.21a
+Toolchain Path:  D:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 3 (build 300)
+Assembler:       Armasm.exe V5.06 update 3 (build 300)
+Linker/Locator:  ArmLink.exe V5.06 update 3 (build 300)
+Library Manager: ArmAr.exe V5.06 update 3 (build 300)
+Hex Converter:   FromElf.exe V5.06 update 3 (build 300)
+CPU DLL:         SARMCM3.DLL V5.21a
+Dialog DLL:      DCM.DLL V1.13.8.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TCM.DLL V1.14.14.0
+ 
+<h2>Project:</h2>
+D:\STM32Cube\STM32Cube_FW_F1_V1.4.0\Projects\STM32VL-Discovery\Examples\SPI\SPI_FullDuplex_ComPolling\MDK-ARM\Project.uvprojx
+Project File Date:  08/17/2017
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 3 (build 300)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'STM32VL-Discovery'
+compiling stm32f1xx_hal_spi_ex.c...
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2959): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IACCVIOL_Pos" (declared at line 575 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IACCVIOL_Pos               (0U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2960): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IACCVIOL_Msk" (declared at line 576 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IACCVIOL_Msk               (0x1U << SCB_CFSR_IACCVIOL_Pos)    /*!< 0x00000001 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2962): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_DACCVIOL_Pos" (declared at line 572 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_DACCVIOL_Pos               (1U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2963): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_DACCVIOL_Msk" (declared at line 573 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_DACCVIOL_Msk               (0x1U << SCB_CFSR_DACCVIOL_Pos)    /*!< 0x00000002 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2965): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MUNSTKERR_Pos" (declared at line 569 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MUNSTKERR_Pos              (3U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2966): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MUNSTKERR_Msk" (declared at line 570 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MUNSTKERR_Msk              (0x1U << SCB_CFSR_MUNSTKERR_Pos)   /*!< 0x00000008 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2968): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MSTKERR_Pos" (declared at line 566 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MSTKERR_Pos                (4U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2969): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MSTKERR_Msk" (declared at line 567 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MSTKERR_Msk                (0x1U << SCB_CFSR_MSTKERR_Pos)     /*!< 0x00000010 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2971): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MMARVALID_Pos" (declared at line 563 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MMARVALID_Pos              (7U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2972): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MMARVALID_Msk" (declared at line 564 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MMARVALID_Msk              (0x1U << SCB_CFSR_MMARVALID_Pos)   /*!< 0x00000080 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2975): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IBUSERR_Pos" (declared at line 594 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IBUSERR_Pos                (8U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2976): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IBUSERR_Msk" (declared at line 595 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IBUSERR_Msk                (0x1U << SCB_CFSR_IBUSERR_Pos)     /*!< 0x00000100 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2978): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_PRECISERR_Pos" (declared at line 591 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_PRECISERR_Pos              (9U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2979): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_PRECISERR_Msk" (declared at line 592 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_PRECISERR_Msk              (0x1U << SCB_CFSR_PRECISERR_Pos)   /*!< 0x00000200 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2981): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IMPRECISERR_Pos" (declared at line 588 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IMPRECISERR_Pos            (10U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2982): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IMPRECISERR_Msk" (declared at line 589 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IMPRECISERR_Msk            (0x1U << SCB_CFSR_IMPRECISERR_Pos) /*!< 0x00000400 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2984): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNSTKERR_Pos" (declared at line 585 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNSTKERR_Pos               (11U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2985): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNSTKERR_Msk" (declared at line 586 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNSTKERR_Msk               (0x1U << SCB_CFSR_UNSTKERR_Pos)    /*!< 0x00000800 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2987): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_STKERR_Pos" (declared at line 582 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_STKERR_Pos                 (12U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2988): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_STKERR_Msk" (declared at line 583 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_STKERR_Msk                 (0x1U << SCB_CFSR_STKERR_Pos)      /*!< 0x00001000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2990): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_BFARVALID_Pos" (declared at line 579 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_BFARVALID_Pos              (15U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2991): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_BFARVALID_Msk" (declared at line 580 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_BFARVALID_Msk              (0x1U << SCB_CFSR_BFARVALID_Pos)   /*!< 0x00008000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2994): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNDEFINSTR_Pos" (declared at line 613 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNDEFINSTR_Pos             (16U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2995): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNDEFINSTR_Msk" (declared at line 614 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNDEFINSTR_Msk             (0x1U << SCB_CFSR_UNDEFINSTR_Pos)  /*!< 0x00010000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2997): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_INVSTATE_Pos" (declared at line 610 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_INVSTATE_Pos               (17U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2998): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_INVSTATE_Msk" (declared at line 611 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_INVSTATE_Msk               (0x1U << SCB_CFSR_INVSTATE_Pos)    /*!< 0x00020000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3000): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_INVPC_Pos" (declared at line 607 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_INVPC_Pos                  (18U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3001): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_INVPC_Msk" (declared at line 608 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_INVPC_Msk                  (0x1U << SCB_CFSR_INVPC_Pos)       /*!< 0x00040000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3003): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_NOCP_Pos" (declared at line 604 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_NOCP_Pos                   (19U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3004): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_NOCP_Msk" (declared at line 605 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_NOCP_Msk                   (0x1U << SCB_CFSR_NOCP_Pos)        /*!< 0x00080000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3006): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNALIGNED_Pos" (declared at line 601 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNALIGNED_Pos              (24U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3007): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNALIGNED_Msk" (declared at line 602 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNALIGNED_Msk              (0x1U << SCB_CFSR_UNALIGNED_Pos)   /*!< 0x01000000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3009): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_DIVBYZERO_Pos" (declared at line 598 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_DIVBYZERO_Pos              (25U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3010): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_DIVBYZERO_Msk" (declared at line 599 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_DIVBYZERO_Msk              (0x1U << SCB_CFSR_DIVBYZERO_Pos)   /*!< 0x02000000 */
+../../../../../../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi_ex.c: 34 warnings, 0 errors
+compiling stm32f1xx_hal.c...
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2959): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IACCVIOL_Pos" (declared at line 575 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IACCVIOL_Pos               (0U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2960): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IACCVIOL_Msk" (declared at line 576 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IACCVIOL_Msk               (0x1U << SCB_CFSR_IACCVIOL_Pos)    /*!< 0x00000001 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2962): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_DACCVIOL_Pos" (declared at line 572 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_DACCVIOL_Pos               (1U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2963): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_DACCVIOL_Msk" (declared at line 573 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_DACCVIOL_Msk               (0x1U << SCB_CFSR_DACCVIOL_Pos)    /*!< 0x00000002 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2965): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MUNSTKERR_Pos" (declared at line 569 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MUNSTKERR_Pos              (3U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2966): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MUNSTKERR_Msk" (declared at line 570 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MUNSTKERR_Msk              (0x1U << SCB_CFSR_MUNSTKERR_Pos)   /*!< 0x00000008 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2968): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MSTKERR_Pos" (declared at line 566 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MSTKERR_Pos                (4U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2969): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MSTKERR_Msk" (declared at line 567 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MSTKERR_Msk                (0x1U << SCB_CFSR_MSTKERR_Pos)     /*!< 0x00000010 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2971): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MMARVALID_Pos" (declared at line 563 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MMARVALID_Pos              (7U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2972): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MMARVALID_Msk" (declared at line 564 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MMARVALID_Msk              (0x1U << SCB_CFSR_MMARVALID_Pos)   /*!< 0x00000080 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2975): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IBUSERR_Pos" (declared at line 594 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IBUSERR_Pos                (8U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2976): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IBUSERR_Msk" (declared at line 595 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IBUSERR_Msk                (0x1U << SCB_CFSR_IBUSERR_Pos)     /*!< 0x00000100 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2978): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_PRECISERR_Pos" (declared at line 591 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_PRECISERR_Pos              (9U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2979): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_PRECISERR_Msk" (declared at line 592 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_PRECISERR_Msk              (0x1U << SCB_CFSR_PRECISERR_Pos)   /*!< 0x00000200 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2981): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IMPRECISERR_Pos" (declared at line 588 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IMPRECISERR_Pos            (10U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2982): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IMPRECISERR_Msk" (declared at line 589 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IMPRECISERR_Msk            (0x1U << SCB_CFSR_IMPRECISERR_Pos) /*!< 0x00000400 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2984): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNSTKERR_Pos" (declared at line 585 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNSTKERR_Pos               (11U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2985): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNSTKERR_Msk" (declared at line 586 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNSTKERR_Msk               (0x1U << SCB_CFSR_UNSTKERR_Pos)    /*!< 0x00000800 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2987): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_STKERR_Pos" (declared at line 582 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_STKERR_Pos                 (12U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2988): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_STKERR_Msk" (declared at line 583 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_STKERR_Msk                 (0x1U << SCB_CFSR_STKERR_Pos)      /*!< 0x00001000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2990): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_BFARVALID_Pos" (declared at line 579 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_BFARVALID_Pos              (15U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2991): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_BFARVALID_Msk" (declared at line 580 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_BFARVALID_Msk              (0x1U << SCB_CFSR_BFARVALID_Pos)   /*!< 0x00008000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2994): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNDEFINSTR_Pos" (declared at line 613 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNDEFINSTR_Pos             (16U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2995): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNDEFINSTR_Msk" (declared at line 614 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNDEFINSTR_Msk             (0x1U << SCB_CFSR_UNDEFINSTR_Pos)  /*!< 0x00010000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2997): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_INVSTATE_Pos" (declared at line 610 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_INVSTATE_Pos               (17U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2998): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_INVSTATE_Msk" (declared at line 611 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_INVSTATE_Msk               (0x1U << SCB_CFSR_INVSTATE_Pos)    /*!< 0x00020000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3000): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_INVPC_Pos" (declared at line 607 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_INVPC_Pos                  (18U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3001): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_INVPC_Msk" (declared at line 608 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_INVPC_Msk                  (0x1U << SCB_CFSR_INVPC_Pos)       /*!< 0x00040000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3003): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_NOCP_Pos" (declared at line 604 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_NOCP_Pos                   (19U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3004): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_NOCP_Msk" (declared at line 605 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_NOCP_Msk                   (0x1U << SCB_CFSR_NOCP_Pos)        /*!< 0x00080000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3006): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNALIGNED_Pos" (declared at line 601 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNALIGNED_Pos              (24U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3007): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNALIGNED_Msk" (declared at line 602 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNALIGNED_Msk              (0x1U << SCB_CFSR_UNALIGNED_Pos)   /*!< 0x01000000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3009): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_DIVBYZERO_Pos" (declared at line 598 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_DIVBYZERO_Pos              (25U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3010): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_DIVBYZERO_Msk" (declared at line 599 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_DIVBYZERO_Msk              (0x1U << SCB_CFSR_DIVBYZERO_Pos)   /*!< 0x02000000 */
+../../../../../../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c: 34 warnings, 0 errors
+compiling stm32f1xx_hal_spi.c...
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2959): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IACCVIOL_Pos" (declared at line 575 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IACCVIOL_Pos               (0U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2960): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IACCVIOL_Msk" (declared at line 576 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IACCVIOL_Msk               (0x1U << SCB_CFSR_IACCVIOL_Pos)    /*!< 0x00000001 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2962): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_DACCVIOL_Pos" (declared at line 572 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_DACCVIOL_Pos               (1U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2963): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_DACCVIOL_Msk" (declared at line 573 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_DACCVIOL_Msk               (0x1U << SCB_CFSR_DACCVIOL_Pos)    /*!< 0x00000002 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2965): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MUNSTKERR_Pos" (declared at line 569 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MUNSTKERR_Pos              (3U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2966): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MUNSTKERR_Msk" (declared at line 570 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MUNSTKERR_Msk              (0x1U << SCB_CFSR_MUNSTKERR_Pos)   /*!< 0x00000008 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2968): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MSTKERR_Pos" (declared at line 566 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MSTKERR_Pos                (4U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2969): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MSTKERR_Msk" (declared at line 567 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MSTKERR_Msk                (0x1U << SCB_CFSR_MSTKERR_Pos)     /*!< 0x00000010 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2971): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MMARVALID_Pos" (declared at line 563 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MMARVALID_Pos              (7U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2972): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MMARVALID_Msk" (declared at line 564 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MMARVALID_Msk              (0x1U << SCB_CFSR_MMARVALID_Pos)   /*!< 0x00000080 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2975): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IBUSERR_Pos" (declared at line 594 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IBUSERR_Pos                (8U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2976): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IBUSERR_Msk" (declared at line 595 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IBUSERR_Msk                (0x1U << SCB_CFSR_IBUSERR_Pos)     /*!< 0x00000100 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2978): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_PRECISERR_Pos" (declared at line 591 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_PRECISERR_Pos              (9U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2979): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_PRECISERR_Msk" (declared at line 592 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_PRECISERR_Msk              (0x1U << SCB_CFSR_PRECISERR_Pos)   /*!< 0x00000200 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2981): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IMPRECISERR_Pos" (declared at line 588 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IMPRECISERR_Pos            (10U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2982): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IMPRECISERR_Msk" (declared at line 589 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IMPRECISERR_Msk            (0x1U << SCB_CFSR_IMPRECISERR_Pos) /*!< 0x00000400 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2984): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNSTKERR_Pos" (declared at line 585 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNSTKERR_Pos               (11U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2985): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNSTKERR_Msk" (declared at line 586 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNSTKERR_Msk               (0x1U << SCB_CFSR_UNSTKERR_Pos)    /*!< 0x00000800 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2987): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_STKERR_Pos" (declared at line 582 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_STKERR_Pos                 (12U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2988): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_STKERR_Msk" (declared at line 583 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_STKERR_Msk                 (0x1U << SCB_CFSR_STKERR_Pos)      /*!< 0x00001000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2990): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_BFARVALID_Pos" (declared at line 579 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_BFARVALID_Pos              (15U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2991): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_BFARVALID_Msk" (declared at line 580 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_BFARVALID_Msk              (0x1U << SCB_CFSR_BFARVALID_Pos)   /*!< 0x00008000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2994): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNDEFINSTR_Pos" (declared at line 613 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNDEFINSTR_Pos             (16U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2995): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNDEFINSTR_Msk" (declared at line 614 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNDEFINSTR_Msk             (0x1U << SCB_CFSR_UNDEFINSTR_Pos)  /*!< 0x00010000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2997): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_INVSTATE_Pos" (declared at line 610 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_INVSTATE_Pos               (17U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2998): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_INVSTATE_Msk" (declared at line 611 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_INVSTATE_Msk               (0x1U << SCB_CFSR_INVSTATE_Pos)    /*!< 0x00020000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3000): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_INVPC_Pos" (declared at line 607 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_INVPC_Pos                  (18U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3001): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_INVPC_Msk" (declared at line 608 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_INVPC_Msk                  (0x1U << SCB_CFSR_INVPC_Pos)       /*!< 0x00040000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3003): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_NOCP_Pos" (declared at line 604 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_NOCP_Pos                   (19U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3004): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_NOCP_Msk" (declared at line 605 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_NOCP_Msk                   (0x1U << SCB_CFSR_NOCP_Pos)        /*!< 0x00080000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3006): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNALIGNED_Pos" (declared at line 601 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNALIGNED_Pos              (24U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3007): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNALIGNED_Msk" (declared at line 602 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNALIGNED_Msk              (0x1U << SCB_CFSR_UNALIGNED_Pos)   /*!< 0x01000000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3009): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_DIVBYZERO_Pos" (declared at line 598 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_DIVBYZERO_Pos              (25U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3010): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_DIVBYZERO_Msk" (declared at line 599 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_DIVBYZERO_Msk              (0x1U << SCB_CFSR_DIVBYZERO_Pos)   /*!< 0x02000000 */
+../../../../../../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c: 34 warnings, 0 errors
+compiling stm32f1xx_hal_cortex.c...
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2959): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IACCVIOL_Pos" (declared at line 575 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IACCVIOL_Pos               (0U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2960): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IACCVIOL_Msk" (declared at line 576 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IACCVIOL_Msk               (0x1U << SCB_CFSR_IACCVIOL_Pos)    /*!< 0x00000001 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2962): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_DACCVIOL_Pos" (declared at line 572 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_DACCVIOL_Pos               (1U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2963): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_DACCVIOL_Msk" (declared at line 573 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_DACCVIOL_Msk               (0x1U << SCB_CFSR_DACCVIOL_Pos)    /*!< 0x00000002 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2965): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MUNSTKERR_Pos" (declared at line 569 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MUNSTKERR_Pos              (3U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2966): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MUNSTKERR_Msk" (declared at line 570 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MUNSTKERR_Msk              (0x1U << SCB_CFSR_MUNSTKERR_Pos)   /*!< 0x00000008 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2968): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MSTKERR_Pos" (declared at line 566 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MSTKERR_Pos                (4U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2969): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MSTKERR_Msk" (declared at line 567 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MSTKERR_Msk                (0x1U << SCB_CFSR_MSTKERR_Pos)     /*!< 0x00000010 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2971): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MMARVALID_Pos" (declared at line 563 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MMARVALID_Pos              (7U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2972): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MMARVALID_Msk" (declared at line 564 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MMARVALID_Msk              (0x1U << SCB_CFSR_MMARVALID_Pos)   /*!< 0x00000080 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2975): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IBUSERR_Pos" (declared at line 594 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IBUSERR_Pos                (8U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2976): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IBUSERR_Msk" (declared at line 595 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IBUSERR_Msk                (0x1U << SCB_CFSR_IBUSERR_Pos)     /*!< 0x00000100 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2978): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_PRECISERR_Pos" (declared at line 591 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_PRECISERR_Pos              (9U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2979): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_PRECISERR_Msk" (declared at line 592 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_PRECISERR_Msk              (0x1U << SCB_CFSR_PRECISERR_Pos)   /*!< 0x00000200 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2981): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IMPRECISERR_Pos" (declared at line 588 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IMPRECISERR_Pos            (10U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2982): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IMPRECISERR_Msk" (declared at line 589 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IMPRECISERR_Msk            (0x1U << SCB_CFSR_IMPRECISERR_Pos) /*!< 0x00000400 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2984): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNSTKERR_Pos" (declared at line 585 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNSTKERR_Pos               (11U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2985): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNSTKERR_Msk" (declared at line 586 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNSTKERR_Msk               (0x1U << SCB_CFSR_UNSTKERR_Pos)    /*!< 0x00000800 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2987): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_STKERR_Pos" (declared at line 582 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_STKERR_Pos                 (12U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2988): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_STKERR_Msk" (declared at line 583 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_STKERR_Msk                 (0x1U << SCB_CFSR_STKERR_Pos)      /*!< 0x00001000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2990): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_BFARVALID_Pos" (declared at line 579 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_BFARVALID_Pos              (15U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2991): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_BFARVALID_Msk" (declared at line 580 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_BFARVALID_Msk              (0x1U << SCB_CFSR_BFARVALID_Pos)   /*!< 0x00008000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2994): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNDEFINSTR_Pos" (declared at line 613 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNDEFINSTR_Pos             (16U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2995): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNDEFINSTR_Msk" (declared at line 614 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNDEFINSTR_Msk             (0x1U << SCB_CFSR_UNDEFINSTR_Pos)  /*!< 0x00010000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2997): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_INVSTATE_Pos" (declared at line 610 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_INVSTATE_Pos               (17U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2998): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_INVSTATE_Msk" (declared at line 611 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_INVSTATE_Msk               (0x1U << SCB_CFSR_INVSTATE_Pos)    /*!< 0x00020000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3000): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_INVPC_Pos" (declared at line 607 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_INVPC_Pos                  (18U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3001): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_INVPC_Msk" (declared at line 608 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_INVPC_Msk                  (0x1U << SCB_CFSR_INVPC_Pos)       /*!< 0x00040000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3003): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_NOCP_Pos" (declared at line 604 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_NOCP_Pos                   (19U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3004): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_NOCP_Msk" (declared at line 605 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_NOCP_Msk                   (0x1U << SCB_CFSR_NOCP_Pos)        /*!< 0x00080000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3006): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNALIGNED_Pos" (declared at line 601 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNALIGNED_Pos              (24U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3007): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNALIGNED_Msk" (declared at line 602 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNALIGNED_Msk              (0x1U << SCB_CFSR_UNALIGNED_Pos)   /*!< 0x01000000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3009): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_DIVBYZERO_Pos" (declared at line 598 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_DIVBYZERO_Pos              (25U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3010): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_DIVBYZERO_Msk" (declared at line 599 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_DIVBYZERO_Msk              (0x1U << SCB_CFSR_DIVBYZERO_Pos)   /*!< 0x02000000 */
+../../../../../../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c: 34 warnings, 0 errors
+compiling stm32f1xx_hal_rcc_ex.c...
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2959): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IACCVIOL_Pos" (declared at line 575 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IACCVIOL_Pos               (0U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2960): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IACCVIOL_Msk" (declared at line 576 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IACCVIOL_Msk               (0x1U << SCB_CFSR_IACCVIOL_Pos)    /*!< 0x00000001 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2962): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_DACCVIOL_Pos" (declared at line 572 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_DACCVIOL_Pos               (1U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2963): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_DACCVIOL_Msk" (declared at line 573 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_DACCVIOL_Msk               (0x1U << SCB_CFSR_DACCVIOL_Pos)    /*!< 0x00000002 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2965): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MUNSTKERR_Pos" (declared at line 569 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MUNSTKERR_Pos              (3U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2966): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MUNSTKERR_Msk" (declared at line 570 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MUNSTKERR_Msk              (0x1U << SCB_CFSR_MUNSTKERR_Pos)   /*!< 0x00000008 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2968): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MSTKERR_Pos" (declared at line 566 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MSTKERR_Pos                (4U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2969): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MSTKERR_Msk" (declared at line 567 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MSTKERR_Msk                (0x1U << SCB_CFSR_MSTKERR_Pos)     /*!< 0x00000010 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2971): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MMARVALID_Pos" (declared at line 563 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MMARVALID_Pos              (7U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2972): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MMARVALID_Msk" (declared at line 564 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MMARVALID_Msk              (0x1U << SCB_CFSR_MMARVALID_Pos)   /*!< 0x00000080 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2975): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IBUSERR_Pos" (declared at line 594 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IBUSERR_Pos                (8U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2976): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IBUSERR_Msk" (declared at line 595 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IBUSERR_Msk                (0x1U << SCB_CFSR_IBUSERR_Pos)     /*!< 0x00000100 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2978): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_PRECISERR_Pos" (declared at line 591 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_PRECISERR_Pos              (9U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2979): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_PRECISERR_Msk" (declared at line 592 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_PRECISERR_Msk              (0x1U << SCB_CFSR_PRECISERR_Pos)   /*!< 0x00000200 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2981): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IMPRECISERR_Pos" (declared at line 588 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IMPRECISERR_Pos            (10U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2982): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IMPRECISERR_Msk" (declared at line 589 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IMPRECISERR_Msk            (0x1U << SCB_CFSR_IMPRECISERR_Pos) /*!< 0x00000400 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2984): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNSTKERR_Pos" (declared at line 585 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNSTKERR_Pos               (11U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2985): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNSTKERR_Msk" (declared at line 586 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNSTKERR_Msk               (0x1U << SCB_CFSR_UNSTKERR_Pos)    /*!< 0x00000800 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2987): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_STKERR_Pos" (declared at line 582 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_STKERR_Pos                 (12U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2988): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_STKERR_Msk" (declared at line 583 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_STKERR_Msk                 (0x1U << SCB_CFSR_STKERR_Pos)      /*!< 0x00001000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2990): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_BFARVALID_Pos" (declared at line 579 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_BFARVALID_Pos              (15U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2991): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_BFARVALID_Msk" (declared at line 580 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_BFARVALID_Msk              (0x1U << SCB_CFSR_BFARVALID_Pos)   /*!< 0x00008000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2994): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNDEFINSTR_Pos" (declared at line 613 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNDEFINSTR_Pos             (16U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2995): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNDEFINSTR_Msk" (declared at line 614 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNDEFINSTR_Msk             (0x1U << SCB_CFSR_UNDEFINSTR_Pos)  /*!< 0x00010000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2997): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_INVSTATE_Pos" (declared at line 610 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_INVSTATE_Pos               (17U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2998): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_INVSTATE_Msk" (declared at line 611 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_INVSTATE_Msk               (0x1U << SCB_CFSR_INVSTATE_Pos)    /*!< 0x00020000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3000): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_INVPC_Pos" (declared at line 607 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_INVPC_Pos                  (18U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3001): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_INVPC_Msk" (declared at line 608 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_INVPC_Msk                  (0x1U << SCB_CFSR_INVPC_Pos)       /*!< 0x00040000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3003): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_NOCP_Pos" (declared at line 604 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_NOCP_Pos                   (19U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3004): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_NOCP_Msk" (declared at line 605 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_NOCP_Msk                   (0x1U << SCB_CFSR_NOCP_Pos)        /*!< 0x00080000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3006): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNALIGNED_Pos" (declared at line 601 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNALIGNED_Pos              (24U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3007): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNALIGNED_Msk" (declared at line 602 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNALIGNED_Msk              (0x1U << SCB_CFSR_UNALIGNED_Pos)   /*!< 0x01000000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3009): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_DIVBYZERO_Pos" (declared at line 598 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_DIVBYZERO_Pos              (25U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3010): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_DIVBYZERO_Msk" (declared at line 599 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_DIVBYZERO_Msk              (0x1U << SCB_CFSR_DIVBYZERO_Pos)   /*!< 0x02000000 */
+../../../../../../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c: 34 warnings, 0 errors
+compiling stm32f1xx_hal_dma.c...
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2959): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IACCVIOL_Pos" (declared at line 575 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IACCVIOL_Pos               (0U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2960): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IACCVIOL_Msk" (declared at line 576 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IACCVIOL_Msk               (0x1U << SCB_CFSR_IACCVIOL_Pos)    /*!< 0x00000001 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2962): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_DACCVIOL_Pos" (declared at line 572 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_DACCVIOL_Pos               (1U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2963): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_DACCVIOL_Msk" (declared at line 573 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_DACCVIOL_Msk               (0x1U << SCB_CFSR_DACCVIOL_Pos)    /*!< 0x00000002 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2965): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MUNSTKERR_Pos" (declared at line 569 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MUNSTKERR_Pos              (3U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2966): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MUNSTKERR_Msk" (declared at line 570 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MUNSTKERR_Msk              (0x1U << SCB_CFSR_MUNSTKERR_Pos)   /*!< 0x00000008 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2968): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MSTKERR_Pos" (declared at line 566 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MSTKERR_Pos                (4U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2969): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MSTKERR_Msk" (declared at line 567 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MSTKERR_Msk                (0x1U << SCB_CFSR_MSTKERR_Pos)     /*!< 0x00000010 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2971): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MMARVALID_Pos" (declared at line 563 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MMARVALID_Pos              (7U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2972): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MMARVALID_Msk" (declared at line 564 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MMARVALID_Msk              (0x1U << SCB_CFSR_MMARVALID_Pos)   /*!< 0x00000080 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2975): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IBUSERR_Pos" (declared at line 594 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IBUSERR_Pos                (8U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2976): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IBUSERR_Msk" (declared at line 595 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IBUSERR_Msk                (0x1U << SCB_CFSR_IBUSERR_Pos)     /*!< 0x00000100 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2978): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_PRECISERR_Pos" (declared at line 591 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_PRECISERR_Pos              (9U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2979): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_PRECISERR_Msk" (declared at line 592 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_PRECISERR_Msk              (0x1U << SCB_CFSR_PRECISERR_Pos)   /*!< 0x00000200 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2981): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IMPRECISERR_Pos" (declared at line 588 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IMPRECISERR_Pos            (10U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2982): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IMPRECISERR_Msk" (declared at line 589 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IMPRECISERR_Msk            (0x1U << SCB_CFSR_IMPRECISERR_Pos) /*!< 0x00000400 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2984): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNSTKERR_Pos" (declared at line 585 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNSTKERR_Pos               (11U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2985): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNSTKERR_Msk" (declared at line 586 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNSTKERR_Msk               (0x1U << SCB_CFSR_UNSTKERR_Pos)    /*!< 0x00000800 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2987): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_STKERR_Pos" (declared at line 582 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_STKERR_Pos                 (12U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2988): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_STKERR_Msk" (declared at line 583 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_STKERR_Msk                 (0x1U << SCB_CFSR_STKERR_Pos)      /*!< 0x00001000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2990): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_BFARVALID_Pos" (declared at line 579 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_BFARVALID_Pos              (15U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2991): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_BFARVALID_Msk" (declared at line 580 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_BFARVALID_Msk              (0x1U << SCB_CFSR_BFARVALID_Pos)   /*!< 0x00008000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2994): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNDEFINSTR_Pos" (declared at line 613 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNDEFINSTR_Pos             (16U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2995): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNDEFINSTR_Msk" (declared at line 614 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNDEFINSTR_Msk             (0x1U << SCB_CFSR_UNDEFINSTR_Pos)  /*!< 0x00010000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2997): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_INVSTATE_Pos" (declared at line 610 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_INVSTATE_Pos               (17U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2998): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_INVSTATE_Msk" (declared at line 611 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_INVSTATE_Msk               (0x1U << SCB_CFSR_INVSTATE_Pos)    /*!< 0x00020000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3000): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_INVPC_Pos" (declared at line 607 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_INVPC_Pos                  (18U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3001): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_INVPC_Msk" (declared at line 608 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_INVPC_Msk                  (0x1U << SCB_CFSR_INVPC_Pos)       /*!< 0x00040000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3003): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_NOCP_Pos" (declared at line 604 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_NOCP_Pos                   (19U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3004): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_NOCP_Msk" (declared at line 605 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_NOCP_Msk                   (0x1U << SCB_CFSR_NOCP_Pos)        /*!< 0x00080000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3006): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNALIGNED_Pos" (declared at line 601 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNALIGNED_Pos              (24U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3007): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNALIGNED_Msk" (declared at line 602 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNALIGNED_Msk              (0x1U << SCB_CFSR_UNALIGNED_Pos)   /*!< 0x01000000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3009): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_DIVBYZERO_Pos" (declared at line 598 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_DIVBYZERO_Pos              (25U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3010): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_DIVBYZERO_Msk" (declared at line 599 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_DIVBYZERO_Msk              (0x1U << SCB_CFSR_DIVBYZERO_Pos)   /*!< 0x02000000 */
+../../../../../../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c: 34 warnings, 0 errors
+compiling stm32f1xx_hal_rcc.c...
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2959): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IACCVIOL_Pos" (declared at line 575 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IACCVIOL_Pos               (0U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2960): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IACCVIOL_Msk" (declared at line 576 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IACCVIOL_Msk               (0x1U << SCB_CFSR_IACCVIOL_Pos)    /*!< 0x00000001 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2962): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_DACCVIOL_Pos" (declared at line 572 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_DACCVIOL_Pos               (1U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2963): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_DACCVIOL_Msk" (declared at line 573 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_DACCVIOL_Msk               (0x1U << SCB_CFSR_DACCVIOL_Pos)    /*!< 0x00000002 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2965): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MUNSTKERR_Pos" (declared at line 569 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MUNSTKERR_Pos              (3U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2966): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MUNSTKERR_Msk" (declared at line 570 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MUNSTKERR_Msk              (0x1U << SCB_CFSR_MUNSTKERR_Pos)   /*!< 0x00000008 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2968): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MSTKERR_Pos" (declared at line 566 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MSTKERR_Pos                (4U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2969): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MSTKERR_Msk" (declared at line 567 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MSTKERR_Msk                (0x1U << SCB_CFSR_MSTKERR_Pos)     /*!< 0x00000010 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2971): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MMARVALID_Pos" (declared at line 563 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MMARVALID_Pos              (7U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2972): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MMARVALID_Msk" (declared at line 564 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MMARVALID_Msk              (0x1U << SCB_CFSR_MMARVALID_Pos)   /*!< 0x00000080 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2975): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IBUSERR_Pos" (declared at line 594 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IBUSERR_Pos                (8U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2976): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IBUSERR_Msk" (declared at line 595 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IBUSERR_Msk                (0x1U << SCB_CFSR_IBUSERR_Pos)     /*!< 0x00000100 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2978): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_PRECISERR_Pos" (declared at line 591 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_PRECISERR_Pos              (9U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2979): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_PRECISERR_Msk" (declared at line 592 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_PRECISERR_Msk              (0x1U << SCB_CFSR_PRECISERR_Pos)   /*!< 0x00000200 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2981): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IMPRECISERR_Pos" (declared at line 588 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IMPRECISERR_Pos            (10U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2982): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IMPRECISERR_Msk" (declared at line 589 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IMPRECISERR_Msk            (0x1U << SCB_CFSR_IMPRECISERR_Pos) /*!< 0x00000400 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2984): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNSTKERR_Pos" (declared at line 585 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNSTKERR_Pos               (11U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2985): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNSTKERR_Msk" (declared at line 586 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNSTKERR_Msk               (0x1U << SCB_CFSR_UNSTKERR_Pos)    /*!< 0x00000800 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2987): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_STKERR_Pos" (declared at line 582 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_STKERR_Pos                 (12U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2988): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_STKERR_Msk" (declared at line 583 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_STKERR_Msk                 (0x1U << SCB_CFSR_STKERR_Pos)      /*!< 0x00001000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2990): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_BFARVALID_Pos" (declared at line 579 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_BFARVALID_Pos              (15U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2991): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_BFARVALID_Msk" (declared at line 580 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_BFARVALID_Msk              (0x1U << SCB_CFSR_BFARVALID_Pos)   /*!< 0x00008000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2994): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNDEFINSTR_Pos" (declared at line 613 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNDEFINSTR_Pos             (16U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2995): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNDEFINSTR_Msk" (declared at line 614 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNDEFINSTR_Msk             (0x1U << SCB_CFSR_UNDEFINSTR_Pos)  /*!< 0x00010000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2997): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_INVSTATE_Pos" (declared at line 610 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_INVSTATE_Pos               (17U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2998): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_INVSTATE_Msk" (declared at line 611 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_INVSTATE_Msk               (0x1U << SCB_CFSR_INVSTATE_Pos)    /*!< 0x00020000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3000): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_INVPC_Pos" (declared at line 607 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_INVPC_Pos                  (18U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3001): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_INVPC_Msk" (declared at line 608 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_INVPC_Msk                  (0x1U << SCB_CFSR_INVPC_Pos)       /*!< 0x00040000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3003): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_NOCP_Pos" (declared at line 604 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_NOCP_Pos                   (19U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3004): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_NOCP_Msk" (declared at line 605 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_NOCP_Msk                   (0x1U << SCB_CFSR_NOCP_Pos)        /*!< 0x00080000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3006): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNALIGNED_Pos" (declared at line 601 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNALIGNED_Pos              (24U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3007): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNALIGNED_Msk" (declared at line 602 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNALIGNED_Msk              (0x1U << SCB_CFSR_UNALIGNED_Pos)   /*!< 0x01000000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3009): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_DIVBYZERO_Pos" (declared at line 598 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_DIVBYZERO_Pos              (25U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3010): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_DIVBYZERO_Msk" (declared at line 599 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_DIVBYZERO_Msk              (0x1U << SCB_CFSR_DIVBYZERO_Pos)   /*!< 0x02000000 */
+../../../../../../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c: 34 warnings, 0 errors
+assembling startup_stm32f100xb.s...
+compiling stm32f1xx_hal_gpio.c...
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2959): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IACCVIOL_Pos" (declared at line 575 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IACCVIOL_Pos               (0U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2960): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IACCVIOL_Msk" (declared at line 576 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IACCVIOL_Msk               (0x1U << SCB_CFSR_IACCVIOL_Pos)    /*!< 0x00000001 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2962): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_DACCVIOL_Pos" (declared at line 572 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_DACCVIOL_Pos               (1U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2963): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_DACCVIOL_Msk" (declared at line 573 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_DACCVIOL_Msk               (0x1U << SCB_CFSR_DACCVIOL_Pos)    /*!< 0x00000002 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2965): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MUNSTKERR_Pos" (declared at line 569 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MUNSTKERR_Pos              (3U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2966): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MUNSTKERR_Msk" (declared at line 570 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MUNSTKERR_Msk              (0x1U << SCB_CFSR_MUNSTKERR_Pos)   /*!< 0x00000008 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2968): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MSTKERR_Pos" (declared at line 566 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MSTKERR_Pos                (4U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2969): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MSTKERR_Msk" (declared at line 567 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MSTKERR_Msk                (0x1U << SCB_CFSR_MSTKERR_Pos)     /*!< 0x00000010 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2971): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MMARVALID_Pos" (declared at line 563 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MMARVALID_Pos              (7U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2972): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MMARVALID_Msk" (declared at line 564 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MMARVALID_Msk              (0x1U << SCB_CFSR_MMARVALID_Pos)   /*!< 0x00000080 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2975): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IBUSERR_Pos" (declared at line 594 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IBUSERR_Pos                (8U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2976): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IBUSERR_Msk" (declared at line 595 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IBUSERR_Msk                (0x1U << SCB_CFSR_IBUSERR_Pos)     /*!< 0x00000100 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2978): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_PRECISERR_Pos" (declared at line 591 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_PRECISERR_Pos              (9U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2979): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_PRECISERR_Msk" (declared at line 592 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_PRECISERR_Msk              (0x1U << SCB_CFSR_PRECISERR_Pos)   /*!< 0x00000200 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2981): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IMPRECISERR_Pos" (declared at line 588 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IMPRECISERR_Pos            (10U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2982): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IMPRECISERR_Msk" (declared at line 589 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IMPRECISERR_Msk            (0x1U << SCB_CFSR_IMPRECISERR_Pos) /*!< 0x00000400 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2984): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNSTKERR_Pos" (declared at line 585 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNSTKERR_Pos               (11U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2985): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNSTKERR_Msk" (declared at line 586 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNSTKERR_Msk               (0x1U << SCB_CFSR_UNSTKERR_Pos)    /*!< 0x00000800 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2987): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_STKERR_Pos" (declared at line 582 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_STKERR_Pos                 (12U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2988): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_STKERR_Msk" (declared at line 583 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_STKERR_Msk                 (0x1U << SCB_CFSR_STKERR_Pos)      /*!< 0x00001000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2990): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_BFARVALID_Pos" (declared at line 579 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_BFARVALID_Pos              (15U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2991): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_BFARVALID_Msk" (declared at line 580 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_BFARVALID_Msk              (0x1U << SCB_CFSR_BFARVALID_Pos)   /*!< 0x00008000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2994): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNDEFINSTR_Pos" (declared at line 613 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNDEFINSTR_Pos             (16U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2995): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNDEFINSTR_Msk" (declared at line 614 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNDEFINSTR_Msk             (0x1U << SCB_CFSR_UNDEFINSTR_Pos)  /*!< 0x00010000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2997): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_INVSTATE_Pos" (declared at line 610 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_INVSTATE_Pos               (17U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2998): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_INVSTATE_Msk" (declared at line 611 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_INVSTATE_Msk               (0x1U << SCB_CFSR_INVSTATE_Pos)    /*!< 0x00020000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3000): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_INVPC_Pos" (declared at line 607 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_INVPC_Pos                  (18U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3001): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_INVPC_Msk" (declared at line 608 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_INVPC_Msk                  (0x1U << SCB_CFSR_INVPC_Pos)       /*!< 0x00040000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3003): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_NOCP_Pos" (declared at line 604 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_NOCP_Pos                   (19U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3004): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_NOCP_Msk" (declared at line 605 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_NOCP_Msk                   (0x1U << SCB_CFSR_NOCP_Pos)        /*!< 0x00080000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3006): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNALIGNED_Pos" (declared at line 601 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNALIGNED_Pos              (24U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3007): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNALIGNED_Msk" (declared at line 602 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNALIGNED_Msk              (0x1U << SCB_CFSR_UNALIGNED_Pos)   /*!< 0x01000000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3009): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_DIVBYZERO_Pos" (declared at line 598 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_DIVBYZERO_Pos              (25U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3010): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_DIVBYZERO_Msk" (declared at line 599 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_DIVBYZERO_Msk              (0x1U << SCB_CFSR_DIVBYZERO_Pos)   /*!< 0x02000000 */
+../../../../../../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c: 34 warnings, 0 errors
+compiling stm32vl_discovery.c...
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2959): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IACCVIOL_Pos" (declared at line 575 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IACCVIOL_Pos               (0U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2960): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IACCVIOL_Msk" (declared at line 576 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IACCVIOL_Msk               (0x1U << SCB_CFSR_IACCVIOL_Pos)    /*!< 0x00000001 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2962): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_DACCVIOL_Pos" (declared at line 572 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_DACCVIOL_Pos               (1U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2963): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_DACCVIOL_Msk" (declared at line 573 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_DACCVIOL_Msk               (0x1U << SCB_CFSR_DACCVIOL_Pos)    /*!< 0x00000002 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2965): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MUNSTKERR_Pos" (declared at line 569 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MUNSTKERR_Pos              (3U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2966): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MUNSTKERR_Msk" (declared at line 570 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MUNSTKERR_Msk              (0x1U << SCB_CFSR_MUNSTKERR_Pos)   /*!< 0x00000008 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2968): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MSTKERR_Pos" (declared at line 566 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MSTKERR_Pos                (4U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2969): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MSTKERR_Msk" (declared at line 567 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MSTKERR_Msk                (0x1U << SCB_CFSR_MSTKERR_Pos)     /*!< 0x00000010 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2971): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MMARVALID_Pos" (declared at line 563 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MMARVALID_Pos              (7U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2972): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MMARVALID_Msk" (declared at line 564 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MMARVALID_Msk              (0x1U << SCB_CFSR_MMARVALID_Pos)   /*!< 0x00000080 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2975): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IBUSERR_Pos" (declared at line 594 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IBUSERR_Pos                (8U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2976): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IBUSERR_Msk" (declared at line 595 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IBUSERR_Msk                (0x1U << SCB_CFSR_IBUSERR_Pos)     /*!< 0x00000100 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2978): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_PRECISERR_Pos" (declared at line 591 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_PRECISERR_Pos              (9U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2979): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_PRECISERR_Msk" (declared at line 592 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_PRECISERR_Msk              (0x1U << SCB_CFSR_PRECISERR_Pos)   /*!< 0x00000200 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2981): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IMPRECISERR_Pos" (declared at line 588 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IMPRECISERR_Pos            (10U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2982): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IMPRECISERR_Msk" (declared at line 589 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IMPRECISERR_Msk            (0x1U << SCB_CFSR_IMPRECISERR_Pos) /*!< 0x00000400 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2984): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNSTKERR_Pos" (declared at line 585 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNSTKERR_Pos               (11U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2985): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNSTKERR_Msk" (declared at line 586 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNSTKERR_Msk               (0x1U << SCB_CFSR_UNSTKERR_Pos)    /*!< 0x00000800 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2987): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_STKERR_Pos" (declared at line 582 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_STKERR_Pos                 (12U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2988): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_STKERR_Msk" (declared at line 583 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_STKERR_Msk                 (0x1U << SCB_CFSR_STKERR_Pos)      /*!< 0x00001000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2990): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_BFARVALID_Pos" (declared at line 579 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_BFARVALID_Pos              (15U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2991): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_BFARVALID_Msk" (declared at line 580 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_BFARVALID_Msk              (0x1U << SCB_CFSR_BFARVALID_Pos)   /*!< 0x00008000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2994): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNDEFINSTR_Pos" (declared at line 613 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNDEFINSTR_Pos             (16U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2995): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNDEFINSTR_Msk" (declared at line 614 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNDEFINSTR_Msk             (0x1U << SCB_CFSR_UNDEFINSTR_Pos)  /*!< 0x00010000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2997): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_INVSTATE_Pos" (declared at line 610 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_INVSTATE_Pos               (17U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2998): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_INVSTATE_Msk" (declared at line 611 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_INVSTATE_Msk               (0x1U << SCB_CFSR_INVSTATE_Pos)    /*!< 0x00020000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3000): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_INVPC_Pos" (declared at line 607 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_INVPC_Pos                  (18U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3001): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_INVPC_Msk" (declared at line 608 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_INVPC_Msk                  (0x1U << SCB_CFSR_INVPC_Pos)       /*!< 0x00040000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3003): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_NOCP_Pos" (declared at line 604 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_NOCP_Pos                   (19U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3004): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_NOCP_Msk" (declared at line 605 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_NOCP_Msk                   (0x1U << SCB_CFSR_NOCP_Pos)        /*!< 0x00080000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3006): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNALIGNED_Pos" (declared at line 601 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNALIGNED_Pos              (24U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3007): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNALIGNED_Msk" (declared at line 602 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNALIGNED_Msk              (0x1U << SCB_CFSR_UNALIGNED_Pos)   /*!< 0x01000000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3009): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_DIVBYZERO_Pos" (declared at line 598 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_DIVBYZERO_Pos              (25U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3010): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_DIVBYZERO_Msk" (declared at line 599 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_DIVBYZERO_Msk              (0x1U << SCB_CFSR_DIVBYZERO_Pos)   /*!< 0x02000000 */
+../../../../../../Drivers/BSP/STM32VL-Discovery/stm32vl_discovery.c: 34 warnings, 0 errors
+compiling stm32f1xx_hal_msp.c...
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2959): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IACCVIOL_Pos" (declared at line 575 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IACCVIOL_Pos               (0U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2960): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IACCVIOL_Msk" (declared at line 576 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IACCVIOL_Msk               (0x1U << SCB_CFSR_IACCVIOL_Pos)    /*!< 0x00000001 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2962): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_DACCVIOL_Pos" (declared at line 572 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_DACCVIOL_Pos               (1U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2963): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_DACCVIOL_Msk" (declared at line 573 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_DACCVIOL_Msk               (0x1U << SCB_CFSR_DACCVIOL_Pos)    /*!< 0x00000002 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2965): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MUNSTKERR_Pos" (declared at line 569 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MUNSTKERR_Pos              (3U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2966): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MUNSTKERR_Msk" (declared at line 570 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MUNSTKERR_Msk              (0x1U << SCB_CFSR_MUNSTKERR_Pos)   /*!< 0x00000008 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2968): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MSTKERR_Pos" (declared at line 566 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MSTKERR_Pos                (4U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2969): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MSTKERR_Msk" (declared at line 567 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MSTKERR_Msk                (0x1U << SCB_CFSR_MSTKERR_Pos)     /*!< 0x00000010 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2971): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MMARVALID_Pos" (declared at line 563 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MMARVALID_Pos              (7U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2972): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MMARVALID_Msk" (declared at line 564 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MMARVALID_Msk              (0x1U << SCB_CFSR_MMARVALID_Pos)   /*!< 0x00000080 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2975): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IBUSERR_Pos" (declared at line 594 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IBUSERR_Pos                (8U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2976): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IBUSERR_Msk" (declared at line 595 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IBUSERR_Msk                (0x1U << SCB_CFSR_IBUSERR_Pos)     /*!< 0x00000100 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2978): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_PRECISERR_Pos" (declared at line 591 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_PRECISERR_Pos              (9U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2979): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_PRECISERR_Msk" (declared at line 592 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_PRECISERR_Msk              (0x1U << SCB_CFSR_PRECISERR_Pos)   /*!< 0x00000200 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2981): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IMPRECISERR_Pos" (declared at line 588 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IMPRECISERR_Pos            (10U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2982): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IMPRECISERR_Msk" (declared at line 589 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IMPRECISERR_Msk            (0x1U << SCB_CFSR_IMPRECISERR_Pos) /*!< 0x00000400 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2984): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNSTKERR_Pos" (declared at line 585 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNSTKERR_Pos               (11U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2985): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNSTKERR_Msk" (declared at line 586 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNSTKERR_Msk               (0x1U << SCB_CFSR_UNSTKERR_Pos)    /*!< 0x00000800 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2987): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_STKERR_Pos" (declared at line 582 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_STKERR_Pos                 (12U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2988): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_STKERR_Msk" (declared at line 583 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_STKERR_Msk                 (0x1U << SCB_CFSR_STKERR_Pos)      /*!< 0x00001000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2990): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_BFARVALID_Pos" (declared at line 579 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_BFARVALID_Pos              (15U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2991): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_BFARVALID_Msk" (declared at line 580 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_BFARVALID_Msk              (0x1U << SCB_CFSR_BFARVALID_Pos)   /*!< 0x00008000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2994): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNDEFINSTR_Pos" (declared at line 613 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNDEFINSTR_Pos             (16U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2995): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNDEFINSTR_Msk" (declared at line 614 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNDEFINSTR_Msk             (0x1U << SCB_CFSR_UNDEFINSTR_Pos)  /*!< 0x00010000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2997): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_INVSTATE_Pos" (declared at line 610 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_INVSTATE_Pos               (17U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2998): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_INVSTATE_Msk" (declared at line 611 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_INVSTATE_Msk               (0x1U << SCB_CFSR_INVSTATE_Pos)    /*!< 0x00020000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3000): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_INVPC_Pos" (declared at line 607 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_INVPC_Pos                  (18U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3001): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_INVPC_Msk" (declared at line 608 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_INVPC_Msk                  (0x1U << SCB_CFSR_INVPC_Pos)       /*!< 0x00040000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3003): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_NOCP_Pos" (declared at line 604 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_NOCP_Pos                   (19U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3004): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_NOCP_Msk" (declared at line 605 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_NOCP_Msk                   (0x1U << SCB_CFSR_NOCP_Pos)        /*!< 0x00080000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3006): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNALIGNED_Pos" (declared at line 601 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNALIGNED_Pos              (24U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3007): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNALIGNED_Msk" (declared at line 602 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNALIGNED_Msk              (0x1U << SCB_CFSR_UNALIGNED_Pos)   /*!< 0x01000000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3009): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_DIVBYZERO_Pos" (declared at line 598 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_DIVBYZERO_Pos              (25U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3010): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_DIVBYZERO_Msk" (declared at line 599 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_DIVBYZERO_Msk              (0x1U << SCB_CFSR_DIVBYZERO_Pos)   /*!< 0x02000000 */
+../Src/stm32f1xx_hal_msp.c: 34 warnings, 0 errors
+compiling main.c...
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2959): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IACCVIOL_Pos" (declared at line 575 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IACCVIOL_Pos               (0U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2960): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IACCVIOL_Msk" (declared at line 576 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IACCVIOL_Msk               (0x1U << SCB_CFSR_IACCVIOL_Pos)    /*!< 0x00000001 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2962): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_DACCVIOL_Pos" (declared at line 572 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_DACCVIOL_Pos               (1U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2963): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_DACCVIOL_Msk" (declared at line 573 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_DACCVIOL_Msk               (0x1U << SCB_CFSR_DACCVIOL_Pos)    /*!< 0x00000002 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2965): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MUNSTKERR_Pos" (declared at line 569 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MUNSTKERR_Pos              (3U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2966): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MUNSTKERR_Msk" (declared at line 570 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MUNSTKERR_Msk              (0x1U << SCB_CFSR_MUNSTKERR_Pos)   /*!< 0x00000008 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2968): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MSTKERR_Pos" (declared at line 566 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MSTKERR_Pos                (4U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2969): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MSTKERR_Msk" (declared at line 567 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MSTKERR_Msk                (0x1U << SCB_CFSR_MSTKERR_Pos)     /*!< 0x00000010 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2971): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MMARVALID_Pos" (declared at line 563 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MMARVALID_Pos              (7U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2972): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MMARVALID_Msk" (declared at line 564 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MMARVALID_Msk              (0x1U << SCB_CFSR_MMARVALID_Pos)   /*!< 0x00000080 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2975): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IBUSERR_Pos" (declared at line 594 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IBUSERR_Pos                (8U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2976): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IBUSERR_Msk" (declared at line 595 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IBUSERR_Msk                (0x1U << SCB_CFSR_IBUSERR_Pos)     /*!< 0x00000100 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2978): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_PRECISERR_Pos" (declared at line 591 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_PRECISERR_Pos              (9U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2979): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_PRECISERR_Msk" (declared at line 592 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_PRECISERR_Msk              (0x1U << SCB_CFSR_PRECISERR_Pos)   /*!< 0x00000200 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2981): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IMPRECISERR_Pos" (declared at line 588 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IMPRECISERR_Pos            (10U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2982): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IMPRECISERR_Msk" (declared at line 589 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IMPRECISERR_Msk            (0x1U << SCB_CFSR_IMPRECISERR_Pos) /*!< 0x00000400 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2984): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNSTKERR_Pos" (declared at line 585 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNSTKERR_Pos               (11U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2985): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNSTKERR_Msk" (declared at line 586 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNSTKERR_Msk               (0x1U << SCB_CFSR_UNSTKERR_Pos)    /*!< 0x00000800 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2987): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_STKERR_Pos" (declared at line 582 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_STKERR_Pos                 (12U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2988): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_STKERR_Msk" (declared at line 583 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_STKERR_Msk                 (0x1U << SCB_CFSR_STKERR_Pos)      /*!< 0x00001000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2990): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_BFARVALID_Pos" (declared at line 579 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_BFARVALID_Pos              (15U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2991): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_BFARVALID_Msk" (declared at line 580 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_BFARVALID_Msk              (0x1U << SCB_CFSR_BFARVALID_Pos)   /*!< 0x00008000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2994): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNDEFINSTR_Pos" (declared at line 613 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNDEFINSTR_Pos             (16U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2995): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNDEFINSTR_Msk" (declared at line 614 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNDEFINSTR_Msk             (0x1U << SCB_CFSR_UNDEFINSTR_Pos)  /*!< 0x00010000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2997): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_INVSTATE_Pos" (declared at line 610 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_INVSTATE_Pos               (17U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2998): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_INVSTATE_Msk" (declared at line 611 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_INVSTATE_Msk               (0x1U << SCB_CFSR_INVSTATE_Pos)    /*!< 0x00020000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3000): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_INVPC_Pos" (declared at line 607 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_INVPC_Pos                  (18U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3001): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_INVPC_Msk" (declared at line 608 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_INVPC_Msk                  (0x1U << SCB_CFSR_INVPC_Pos)       /*!< 0x00040000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3003): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_NOCP_Pos" (declared at line 604 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_NOCP_Pos                   (19U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3004): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_NOCP_Msk" (declared at line 605 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_NOCP_Msk                   (0x1U << SCB_CFSR_NOCP_Pos)        /*!< 0x00080000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3006): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNALIGNED_Pos" (declared at line 601 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNALIGNED_Pos              (24U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3007): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNALIGNED_Msk" (declared at line 602 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNALIGNED_Msk              (0x1U << SCB_CFSR_UNALIGNED_Pos)   /*!< 0x01000000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3009): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_DIVBYZERO_Pos" (declared at line 598 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_DIVBYZERO_Pos              (25U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3010): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_DIVBYZERO_Msk" (declared at line 599 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_DIVBYZERO_Msk              (0x1U << SCB_CFSR_DIVBYZERO_Pos)   /*!< 0x02000000 */
+../Src/main.c: 34 warnings, 0 errors
+compiling stm32f1xx_it.c...
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2959): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IACCVIOL_Pos" (declared at line 575 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IACCVIOL_Pos               (0U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2960): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IACCVIOL_Msk" (declared at line 576 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IACCVIOL_Msk               (0x1U << SCB_CFSR_IACCVIOL_Pos)    /*!< 0x00000001 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2962): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_DACCVIOL_Pos" (declared at line 572 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_DACCVIOL_Pos               (1U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2963): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_DACCVIOL_Msk" (declared at line 573 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_DACCVIOL_Msk               (0x1U << SCB_CFSR_DACCVIOL_Pos)    /*!< 0x00000002 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2965): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MUNSTKERR_Pos" (declared at line 569 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MUNSTKERR_Pos              (3U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2966): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MUNSTKERR_Msk" (declared at line 570 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MUNSTKERR_Msk              (0x1U << SCB_CFSR_MUNSTKERR_Pos)   /*!< 0x00000008 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2968): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MSTKERR_Pos" (declared at line 566 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MSTKERR_Pos                (4U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2969): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MSTKERR_Msk" (declared at line 567 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MSTKERR_Msk                (0x1U << SCB_CFSR_MSTKERR_Pos)     /*!< 0x00000010 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2971): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MMARVALID_Pos" (declared at line 563 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MMARVALID_Pos              (7U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2972): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MMARVALID_Msk" (declared at line 564 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MMARVALID_Msk              (0x1U << SCB_CFSR_MMARVALID_Pos)   /*!< 0x00000080 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2975): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IBUSERR_Pos" (declared at line 594 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IBUSERR_Pos                (8U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2976): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IBUSERR_Msk" (declared at line 595 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IBUSERR_Msk                (0x1U << SCB_CFSR_IBUSERR_Pos)     /*!< 0x00000100 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2978): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_PRECISERR_Pos" (declared at line 591 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_PRECISERR_Pos              (9U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2979): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_PRECISERR_Msk" (declared at line 592 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_PRECISERR_Msk              (0x1U << SCB_CFSR_PRECISERR_Pos)   /*!< 0x00000200 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2981): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IMPRECISERR_Pos" (declared at line 588 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IMPRECISERR_Pos            (10U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2982): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IMPRECISERR_Msk" (declared at line 589 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IMPRECISERR_Msk            (0x1U << SCB_CFSR_IMPRECISERR_Pos) /*!< 0x00000400 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2984): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNSTKERR_Pos" (declared at line 585 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNSTKERR_Pos               (11U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2985): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNSTKERR_Msk" (declared at line 586 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNSTKERR_Msk               (0x1U << SCB_CFSR_UNSTKERR_Pos)    /*!< 0x00000800 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2987): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_STKERR_Pos" (declared at line 582 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_STKERR_Pos                 (12U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2988): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_STKERR_Msk" (declared at line 583 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_STKERR_Msk                 (0x1U << SCB_CFSR_STKERR_Pos)      /*!< 0x00001000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2990): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_BFARVALID_Pos" (declared at line 579 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_BFARVALID_Pos              (15U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2991): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_BFARVALID_Msk" (declared at line 580 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_BFARVALID_Msk              (0x1U << SCB_CFSR_BFARVALID_Pos)   /*!< 0x00008000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2994): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNDEFINSTR_Pos" (declared at line 613 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNDEFINSTR_Pos             (16U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2995): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNDEFINSTR_Msk" (declared at line 614 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNDEFINSTR_Msk             (0x1U << SCB_CFSR_UNDEFINSTR_Pos)  /*!< 0x00010000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2997): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_INVSTATE_Pos" (declared at line 610 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_INVSTATE_Pos               (17U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2998): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_INVSTATE_Msk" (declared at line 611 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_INVSTATE_Msk               (0x1U << SCB_CFSR_INVSTATE_Pos)    /*!< 0x00020000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3000): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_INVPC_Pos" (declared at line 607 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_INVPC_Pos                  (18U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3001): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_INVPC_Msk" (declared at line 608 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_INVPC_Msk                  (0x1U << SCB_CFSR_INVPC_Pos)       /*!< 0x00040000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3003): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_NOCP_Pos" (declared at line 604 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_NOCP_Pos                   (19U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3004): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_NOCP_Msk" (declared at line 605 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_NOCP_Msk                   (0x1U << SCB_CFSR_NOCP_Pos)        /*!< 0x00080000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3006): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNALIGNED_Pos" (declared at line 601 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNALIGNED_Pos              (24U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3007): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNALIGNED_Msk" (declared at line 602 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNALIGNED_Msk              (0x1U << SCB_CFSR_UNALIGNED_Pos)   /*!< 0x01000000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3009): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_DIVBYZERO_Pos" (declared at line 598 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_DIVBYZERO_Pos              (25U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3010): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_DIVBYZERO_Msk" (declared at line 599 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_DIVBYZERO_Msk              (0x1U << SCB_CFSR_DIVBYZERO_Pos)   /*!< 0x02000000 */
+../Src/stm32f1xx_it.c: 34 warnings, 0 errors
+compiling system_stm32f1xx.c...
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2959): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IACCVIOL_Pos" (declared at line 575 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IACCVIOL_Pos               (0U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2960): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IACCVIOL_Msk" (declared at line 576 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IACCVIOL_Msk               (0x1U << SCB_CFSR_IACCVIOL_Pos)    /*!< 0x00000001 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2962): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_DACCVIOL_Pos" (declared at line 572 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_DACCVIOL_Pos               (1U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2963): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_DACCVIOL_Msk" (declared at line 573 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_DACCVIOL_Msk               (0x1U << SCB_CFSR_DACCVIOL_Pos)    /*!< 0x00000002 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2965): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MUNSTKERR_Pos" (declared at line 569 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MUNSTKERR_Pos              (3U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2966): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MUNSTKERR_Msk" (declared at line 570 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MUNSTKERR_Msk              (0x1U << SCB_CFSR_MUNSTKERR_Pos)   /*!< 0x00000008 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2968): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MSTKERR_Pos" (declared at line 566 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MSTKERR_Pos                (4U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2969): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MSTKERR_Msk" (declared at line 567 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MSTKERR_Msk                (0x1U << SCB_CFSR_MSTKERR_Pos)     /*!< 0x00000010 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2971): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MMARVALID_Pos" (declared at line 563 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MMARVALID_Pos              (7U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2972): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_MMARVALID_Msk" (declared at line 564 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_MMARVALID_Msk              (0x1U << SCB_CFSR_MMARVALID_Pos)   /*!< 0x00000080 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2975): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IBUSERR_Pos" (declared at line 594 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IBUSERR_Pos                (8U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2976): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IBUSERR_Msk" (declared at line 595 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IBUSERR_Msk                (0x1U << SCB_CFSR_IBUSERR_Pos)     /*!< 0x00000100 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2978): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_PRECISERR_Pos" (declared at line 591 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_PRECISERR_Pos              (9U)                               
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2979): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_PRECISERR_Msk" (declared at line 592 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_PRECISERR_Msk              (0x1U << SCB_CFSR_PRECISERR_Pos)   /*!< 0x00000200 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2981): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IMPRECISERR_Pos" (declared at line 588 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IMPRECISERR_Pos            (10U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2982): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_IMPRECISERR_Msk" (declared at line 589 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_IMPRECISERR_Msk            (0x1U << SCB_CFSR_IMPRECISERR_Pos) /*!< 0x00000400 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2984): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNSTKERR_Pos" (declared at line 585 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNSTKERR_Pos               (11U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2985): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNSTKERR_Msk" (declared at line 586 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNSTKERR_Msk               (0x1U << SCB_CFSR_UNSTKERR_Pos)    /*!< 0x00000800 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2987): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_STKERR_Pos" (declared at line 582 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_STKERR_Pos                 (12U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2988): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_STKERR_Msk" (declared at line 583 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_STKERR_Msk                 (0x1U << SCB_CFSR_STKERR_Pos)      /*!< 0x00001000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2990): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_BFARVALID_Pos" (declared at line 579 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_BFARVALID_Pos              (15U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2991): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_BFARVALID_Msk" (declared at line 580 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_BFARVALID_Msk              (0x1U << SCB_CFSR_BFARVALID_Pos)   /*!< 0x00008000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2994): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNDEFINSTR_Pos" (declared at line 613 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNDEFINSTR_Pos             (16U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2995): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNDEFINSTR_Msk" (declared at line 614 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNDEFINSTR_Msk             (0x1U << SCB_CFSR_UNDEFINSTR_Pos)  /*!< 0x00010000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2997): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_INVSTATE_Pos" (declared at line 610 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_INVSTATE_Pos               (17U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(2998): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_INVSTATE_Msk" (declared at line 611 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_INVSTATE_Msk               (0x1U << SCB_CFSR_INVSTATE_Pos)    /*!< 0x00020000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3000): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_INVPC_Pos" (declared at line 607 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_INVPC_Pos                  (18U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3001): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_INVPC_Msk" (declared at line 608 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_INVPC_Msk                  (0x1U << SCB_CFSR_INVPC_Pos)       /*!< 0x00040000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3003): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_NOCP_Pos" (declared at line 604 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_NOCP_Pos                   (19U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3004): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_NOCP_Msk" (declared at line 605 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_NOCP_Msk                   (0x1U << SCB_CFSR_NOCP_Pos)        /*!< 0x00080000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3006): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNALIGNED_Pos" (declared at line 601 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNALIGNED_Pos              (24U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3007): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_UNALIGNED_Msk" (declared at line 602 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_UNALIGNED_Msk              (0x1U << SCB_CFSR_UNALIGNED_Pos)   /*!< 0x01000000 */
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3009): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_DIVBYZERO_Pos" (declared at line 598 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_DIVBYZERO_Pos              (25U)                              
+../../../../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h(3010): warning:  #47-D: incompatible redefinition of macro "SCB_CFSR_DIVBYZERO_Msk" (declared at line 599 of "D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h")
+  #define SCB_CFSR_DIVBYZERO_Msk              (0x1U << SCB_CFSR_DIVBYZERO_Pos)   /*!< 0x02000000 */
+../Src/system_stm32f1xx.c: 34 warnings, 0 errors
+linking...
+Program Size: Code=4340 RO-data=344 RW-data=140 ZI-data=1228  
+"STM32VL-Discovery\STM32VL-Discovery.axf" - 0 Error(s), 442 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.1.0.pack
+                ARM::CMSIS:CORE:5.0.2
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.0.2
+
+<h2>Collection of Component include folders:</h2>
+  D:\STM32Cube\STM32Cube_FW_F1_V1.4.0\Projects\STM32VL-Discovery\Examples\SPI\SPI_FullDuplex_ComPolling\MDK-ARM\RTE
+  D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include
+  D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.0.2
+Build Time Elapsed:  00:00:05
+</pre>
+</body>
+</html>

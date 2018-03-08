@@ -1,0 +1,6 @@
+-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork 
+-I "D:\Program Files\KeilArm\ARM\RV31\INC"
+-I "D:\Program Files\KeilArm\ARM\CMSIS\Include"
+-I "D:\Program Files\KeilArm\ARM\Inc\ST\STM32F10x"
+
+-o .\main.o --omf_browse .\main.crf --depend .\main.d "main.c"
